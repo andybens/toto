@@ -1,0 +1,11 @@
+ks_demo:
+    resource: "@KSDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ks_plateform:
+    resource: "@KSPlateformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

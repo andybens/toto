@@ -1,0 +1,3 @@
+ks_demo_homepage:
+    path:     /
+    defaults: { _controller: KSDemoBundle:Default:index }

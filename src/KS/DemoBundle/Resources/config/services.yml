@@ -1,0 +1,4 @@
+services:
+#    ks_demo.example:
+#        class: KS\DemoBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
