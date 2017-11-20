@@ -1,0 +1,103 @@
+<?php
+
+/* TwigBundle:Exception:exception.xml.twig */
+class __TwigTemplate_afb9ea21ae125d319966de20c90b8007f6d948d5b6ec8b6a1f21b50b07ca9fb3 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $__internal_b91351560b369438bdeb6b2d9d177f5725b828cb3934ec98248bb88a4c7bb0cc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b91351560b369438bdeb6b2d9d177f5725b828cb3934ec98248bb88a4c7bb0cc->enter($__internal_b91351560b369438bdeb6b2d9d177f5725b828cb3934ec98248bb88a4c7bb0cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.xml.twig"));
+
+        $__internal_e9fabdc2f0141cef26c80bed2b84d91cccbf93c25e38c0edc538221e59cb243c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e9fabdc2f0141cef26c80bed2b84d91cccbf93c25e38c0edc538221e59cb243c->enter($__internal_e9fabdc2f0141cef26c80bed2b84d91cccbf93c25e38c0edc538221e59cb243c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.xml.twig"));
+
+        // line 1
+        echo "<?xml version=\"1.0\" encoding=\"";
+        echo twig_escape_filter($this->env, $this->env->getCharset(), "html", null, true);
+        echo "\" ?>
+
+<error code=\"";
+        // line 3
+        echo twig_escape_filter($this->env, ($context["status_code"] ?? $this->getContext($context, "status_code")), "html", null, true);
+        echo "\" message=\"";
+        echo twig_escape_filter($this->env, ($context["status_text"] ?? $this->getContext($context, "status_text")), "html", null, true);
+        echo "\">
+";
+        // line 4
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["exception"] ?? $this->getContext($context, "exception")), "toarray", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["e"]) {
+            // line 5
+            echo "    <exception class=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["e"], "class", array()), "html", null, true);
+            echo "\" message=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["e"], "message", array()), "html", null, true);
+            echo "\">
+";
+            // line 6
+            echo twig_include($this->env, $context, "@Twig/Exception/traces.xml.twig", array("exception" => $context["e"]), false);
+            echo "
+    </exception>
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['e'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 9
+        echo "</error>
+";
+        
+        $__internal_b91351560b369438bdeb6b2d9d177f5725b828cb3934ec98248bb88a4c7bb0cc->leave($__internal_b91351560b369438bdeb6b2d9d177f5725b828cb3934ec98248bb88a4c7bb0cc_prof);
+
+        
+        $__internal_e9fabdc2f0141cef26c80bed2b84d91cccbf93c25e38c0edc538221e59cb243c->leave($__internal_e9fabdc2f0141cef26c80bed2b84d91cccbf93c25e38c0edc538221e59cb243c_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "TwigBundle:Exception:exception.xml.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  57 => 9,  48 => 6,  41 => 5,  37 => 4,  31 => 3,  25 => 1,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
+
+<error code=\"{{ status_code }}\" message=\"{{ status_text }}\">
+{% for e in exception.toarray %}
+    <exception class=\"{{ e.class }}\" message=\"{{ e.message }}\">
+{{ include('@Twig/Exception/traces.xml.twig', { exception: e }, with_context = false) }}
+    </exception>
+{% endfor %}
+</error>
+", "TwigBundle:Exception:exception.xml.twig", "/Users/oualid/toto/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/exception.xml.twig");
+    }
+}
