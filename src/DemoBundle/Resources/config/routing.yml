@@ -1,3 +1,42 @@
 demo_homepage:
-    path:     /
+    path:     /site
     defaults: { _controller: DemoBundle:Default:index }
+
+    # src/DemoBundle/Resources/config/routing.yml
+demo_service:
+    path:     /services
+    defaults: { _controller: DemoBundle:Default:service }
+
+
+demo_test:
+    path:     /test
+    defaults: { _controller: DemoBundle:Default:test }
+
+demo_contact:
+    path:     /contact
+    defaults: { _controller: DemoBundle:Default:contact }
+
+
+hello_money:
+    path:     /hello-money
+    defaults: { _controller:DemoBundle:Advert:index }
+
+demo_home:
+    path:      /platform
+    defaults: { _controller: DemoBundle:Advert:index }
+
+demo_view:
+    path:      /platform/advert/{id}
+    defaults: { _controller: DemoBundle:Advert:view }
+
+demo_add:
+    path:      /platform/add
+    defaults: { _controller: DemoBundle:Advert:add }
+
+
+#demo_view_slug:
+   # path:      /platform/{year}/{slug}.{_format}
+   # defaults:  _controller: DemoBundle:Advert:viewSlug
+    #requirements:
+    #year:   \d{4}
+    #format: html|xml

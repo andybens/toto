@@ -1,3 +1,9 @@
+ks:
+    resource: "@KSBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
 demo:
     resource: "@DemoBundle/Resources/config/routing.yml"
     prefix:   /
