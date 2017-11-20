@@ -3,10 +3,6 @@ demo_homepage:
     defaults: { _controller: DemoBundle:Default:index }
 
     # src/DemoBundle/Resources/config/routing.yml
-demo_service:
-    path:     /services
-    defaults: { _controller: DemoBundle:Default:service }
-
 
 demo_test:
     path:     /test
